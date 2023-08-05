@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Nflix</title>
+
+</head>
+
+<body>
+    <header class="text-gray-600 body-font bg-cover bg-center bg-no-repeat border-b-8  border-slate-600" style="background-image: url('./images/bgheader.png'); ">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img src="./images/netflixlogo.png" alt="" width="120">
+
+            </a>
+            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+
+            </nav>
+            <button class="inline-flex items-center bg-red-600 border-0 py-1 px-3 focus:outline-none hover:bg-red-700 rounded text-white mt-4 md:mt-0">sign In
+            
+          </button>
+        </div>
+
+        <section class="text-gray-600 body-font">
+            <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center text-white">
+
+                <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium "><b>Unlimited movies, TV shows, and more</b></h1>
+                    <p class="mb-8 leading-relaxed"><b>Watch anywhere. Cancel anytime.</b></p>
+                    <div class="flex w-full justify-center items-end">
+                        <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
+                            <label for="hero-field" class="leading-7 text-sm"><b>Ready to watch? Enter your email to create or restart your membership.</b></label>
+                            <input type="email" placeholder="Email address" id="hero-field" name="hero-field" class="w-full bg-black bg-opacity-50 rounded focus:ring-2 focus:ring-indigo-200 focus:bg-transparent border border-gray-300 focus:border-indigo-500  outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <button class="inline-flex text-white bg-red-600 border-0 py-2 px-6 focus:outline-none hover:bg-red-700 rounded text-lg">Get Started <i class="fa-solid fa-angle-right mt-1 ml-2" style="color: #fcfcfc;"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="text-gray-600 body-font bg-black border-b-8  border-slate-600">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-white ">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium">Enjoy on your TV
+
+                </h1>
+                <p class="mb-8 leading-relaxed">Watch on Smart TVs, Playstation, Xbox, Chromecast, <br>Apple TV, Blu-ray players, and more.</p>
+
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+
+                <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 md:h-96 overflow-hidden rounded-lg">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./images/moneyhiest.jpg" class="absolute block w-3/5 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./images/nathin.jpg" class="absolute block w-3/5 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./images/the hunting.jpeg" class="absolute block w-3/5 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./images/gothrone.jpg" class="absolute block w-3/5 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./images/withers.jpeg" class="absolute block w-3/5 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="text-gray-600 body-font bg-black text-white  border-b-8  border-slate-600">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="./images/stranger-things-5-poster-wallpaper-phone.jpg">
+            </div>
+            <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center ">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium"><b>Download your shows to <br> watch offline</b>
+
+                </h1>
+                <p class="mb-8 leading-relaxed"><b>Save your favorites easily and always have something to <br>watch.</b></p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="text-gray-600 body-font bg-black text-white border-b-8  border-slate-600">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 ">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium"><b>Watch <br>
+                    everywhere</b>
+                </h1>
+                <p class="mb-8 leading-relaxed"><b>Stream unlimited movies and TV <br> shows on your phone, tablet, laptop,<br> and TV.</b></p>
+
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="hero" src="./images/mob.jpeg">
+            </div>
+        </div>
+    </section>
+
+    <section class=" body-font bg-black text-white border-b-8  border-slate-600">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="./images/kids.png">
+            </div>
+            <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left ">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium "><b>Create profiles for kids</b>
+                </h1>
+                <p class="mb-8 leading-relaxed"><b>Send kids on adventures with their favorite <br> characters in a space made just for them—free with <br> your membership.</b></p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class=" body-font bg-black text-white border-b-8  border-slate-600">
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="text-3xl font-medium title-font  mb-12 text-center">Frequently Asked Questions</h1>
+            <div class="d-grid gap-2 ">
+                <button type="button" class="btn btn-secondary btn-lg hover:bg-slate-400 p-4 text-left flex  justify-content-between">What is Netflix?<i class="fa-solid fa-plus " style="color: #ffffff;"></i></button>
+                <button type="button" class="btn btn-secondary btn-lg hover:bg-slate-400 p-4 text-left flex  justify-content-between">How much does Netflix cost? <i class="fa-solid fa-plus " style="color: #ffffff;"></i></button>
+                <button type="button" class="btn btn-secondary btn-lg hover:bg-slate-400 p-4 text-left flex  justify-content-between">Where can I watch? <i class="fa-solid fa-plus " style="color: #ffffff;"></i></button>
+                <button type="button" class="btn btn-secondary btn-lg hover:bg-slate-400 p-4 text-left flex  justify-content-between">How do I cancel? <i class="fa-solid fa-plus " style="color: #ffffff;"></i></button>
+                <button type="button" class="btn btn-secondary btn-lg hover:bg-slate-400 p-4 text-left flex  justify-content-between">What can I watch on Netflix? <i class="fa-solid fa-plus " style="color: #ffffff;"></i></button>
+                <button type="button" class="btn btn-secondary btn-lg hover:bg-slate-400 p-4 text-left flex  justify-content-between">Is Netflix good for kids? <i class="fa-solid fa-plus " style="color: #ffffff;"></i></button>
+                </button>
+            </div>
+            <div class="flex w-full justify-center items-end mt-5">
+                <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
+                    <label for="hero-field" class="leading-7 text-sm"><b>Ready to watch? Enter your email to create or restart your membership.</b></label>
+                    <input type="email" placeholder="Email address" id="hero-field" name="hero-field" class="w-full bg-black bg-opacity-50 rounded focus:ring-2 focus:ring-indigo-200 focus:bg-transparent border border-gray-300 focus:border-indigo-500  outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <button class="inline-flex text-white bg-red-600 border-0 py-2 px-6 focus:outline-none hover:bg-red-700 rounded text-lg">Get Started <i class="fa-solid fa-angle-right mt-1 ml-2" style="color: #fcfcfc;"></i></button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="text-gray-600 body-font bg-black text-white">
+
+        <div class="container px-5 py-24 mx-auto leading-loose ">
+
+            <div class="pl-5 underline text-white">
+                <a href="#" class=" hover:text-white">
+                    <p>Questions? Contact us.</p>
+                </a>
+            </div>
+
+
+            <div class="flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+
+
+                <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left  order-first underline">
+
+
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+
+
+
+                        <nav class="list-none mb-10 ">
+                            <li>
+                                <a href="" class=" hover:text-white">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" hover:text-white">Media Center</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" hover:text-white">Ways to Watch</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" hover:text-white">Cookie Preferences</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" hover:text-white">Speed Test</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a href="#" class=" hover:text-white">Help Center</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" hover:text-white">Investor Relations</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" hover:text-white">Terms of Use</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" hover:text-white">Corporate Information</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" hover:text-white">Legal Notices</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a href="#" class=" hover:text-white">Account</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" hover:text-white">Jobs</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" hover:text-white">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" hover:text-white">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" hover:text-white">Only on Netflix</a>
+                            </li>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="pl-5">
+
+
+                <select class="bg-dark text-white border-1 rounded-md p-1 ">
+                   
+                    
+                    <i class="fa-solid fa-globe" style="color: #dce1ea;"><option value="en">English</option></i>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option></select>
+                <!-- Add more language options as needed -->
+
+
+                </select>
+            </div>
+            <p class="m-4">Netflix Pakistan</p>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Get all carousel elements
+        const carousels = document.querySelectorAll('[data-carousel="slide"]');
+
+        // Loop through each carousel element
+        carousels.forEach((carousel) => {
+            // Get all carousel items within this carousel
+            const carouselItems = carousel.querySelectorAll('[data-carousel-item]');
+
+            // Start the carousel from the first item
+            let currentIndex = 0;
+
+            // Function to show the current item and hide others
+            function showCurrentItem() {
+                carouselItems.forEach((item, index) => {
+                    if (index === currentIndex) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            }
+
+            // Function to show the next item
+            function showNextItem() {
+                currentIndex++;
+                if (currentIndex >= carouselItems.length) {
+                    currentIndex = 0; // Restart the carousel if the last item is reached
+                }
+                showCurrentItem();
+            }
+
+            // Function to show the previous item
+            function showPreviousItem() {
+                currentIndex--;
+                if (currentIndex < 0) {
+                    currentIndex = carouselItems.length - 1; // Go to the last item if the first item is reached
+                }
+                showCurrentItem();
+            }
+
+            // Attach click event listeners to the previous and next buttons
+            const prevButton = carousel.querySelector('[data-carousel-prev]');
+            const nextButton = carousel.querySelector('[data-carousel-next]');
+
+            prevButton.addEventListener('click', () => {
+                clearInterval(carouselInterval); // Stop automatic slide on button click
+                showPreviousItem();
+                startCarouselInterval(); // Restart automatic slide
+            });
+
+            nextButton.addEventListener('click', () => {
+                clearInterval(carouselInterval); // Stop automatic slide on button click
+                showNextItem();
+                startCarouselInterval(); // Restart automatic slide
+            });
+
+            // Function to start the carousel automatically
+            function startCarouselInterval() {
+                const interval = 3000; // Set the interval between slides (in milliseconds)
+                carouselInterval = setInterval(showNextItem, interval);
+            }
+
+            // Start the carousel automatically
+            let carouselInterval;
+            startCarouselInterval();
+        });
+    </script>
+
+
+</body>
+
+</html>
